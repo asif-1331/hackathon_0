@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+
+    <style>
+        /* ================= CSS RESET START */
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        q:before,
+        q:after {
+            content: "";
+        }
+
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        ol,
+        ul,
+        li,
+        figure,
+        figcaption,
+        blockquote,
+        dl,
+        dd {
+            margin: 0;
+            padding: 0;
+        }
+
+        html:focus-within {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            text-rendering: optimizeSpeed;
+            line-height: 1.5;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        input,
+        button,
+        textarea,
+        select {
+            font: inherit;
+        }
+
+
+
+
+
+        /* ================= CSS RESET END */
+
+
+
+
+
+
+        body {
+            background-color: black;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+
+        .container {
+            max-width: 1320px;
+            margin: 0 auto;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+
+
+
+
+
+
+        /* ================= NAVBAR */
+
+
+
+
+
+        nav {
+            position: fixed;
+            /* top: 0; */
+            width: 100%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        nav .menu {
+            justify-content: space-between;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+        }
+
+        nav .nav-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav .nav-items ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav .nav-items ul li a {
+            font-size: 18px;
+            font-weight: 400;
+            color: white;
+            margin-right: 60px;
+        }
+
+        nav .nav-items ul li a:hover {
+            font-weight: 700;
+            color: black;
+            transition: .4s;
+
+        }
+
+
+        nav .nav-items ul:last-child {
+            margin-right: 0;
+        }
+
+
+
+
+
+
+        /* ================= HERO SECTION */
+
+
+
+        /* 
+#Hero{
+    background: url('../images/Banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
+
+        #Hero .content p {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            color: #FFC178;
+        }
+
+
+        #Hero .content h1 span {
+            font-size: 96px;
+            font-weight: 700;
+            color: white;
+        }
+
+        #Hero .content h1 {
+            font-size: 88px;
+            font-weight: 400;
+            color: white;
+        }
+
+        #Hero .content {
+            padding: 220px 0 320px;
+            width: 860px;
+        }
+
+
+
+
+        /* ================= ABOUT SECTION */
+
+
+
+        #About .about .about-img img {
+            width: 100%;
+        }
+
+
+        #About .about .about-img {
+            width: 40%;
+        }
+
+
+        #About .about .about-content {
+            text-transform: uppercase;
+            width: 587px;
+            padding: 78px 0 168px 0;
+            width: 60%;
+        }
+
+
+
+        #About .about .about-content .title-top {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 6px;
+            color: #FBD784;
+        }
+
+
+        #About .about .about-content h2 {
+            font-size: 64px;
+            font-weight: 700;
+            color: white;
+            padding-bottom: 13px;
+        }
+
+        #About .about .about-content .about-desc {
+            font-size: 14px;
+            font-weight: 600;
+            color: white;
+        }
+
+        #About .about .about-content a {
+            font-size: 18px;
+            font-weight: 700;
+            color: #FBD784;
+            padding-top: 66px;
+            display: inline-block;
+        }
+
+
+        #About .about {
+            display: flex;
+            padding: 220px 0 320px;
+            column-gap: 140px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ================== NAVBAR -->
+
+    <nav>
+        <div class="menu container flex">
+            <div class="logo">
+                QWERy
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- ================== HERO SECTION -->
+
+    <section id="Hero">
+        <div class="container">
+            <div class="content">
+                <p>HOME FOR PAGES</p>
+                <h1>
+                    <span>HOME</span><br />
+                </h1>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
